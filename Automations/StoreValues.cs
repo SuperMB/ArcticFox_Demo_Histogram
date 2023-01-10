@@ -1,16 +1,8 @@
-/*
-Copyright (c) 2022, Icii Technologies LLC
-All rights reserved.
-
-This source code is licensed under the BSD-style license found in the
-LICENSE file in the root directory of this source tree. 
-*/
-
 using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace LiveDemo_Histogram;
+namespace ArcticFox_Demo_Histogram;
 
 public class StoreValues : VerilogAutomation
 {
@@ -56,15 +48,6 @@ StoreValue({value});";
 		}
 
 		File.WriteAllText("HistogramVisualization.txt", histogramVisualization.ToString());
-
-
-
-// 			CodeAfterAutomation += @$"
-// StoreValue({random.Next(0, 128)});"; 
-
-// 		for(int i = 0; i < amountToSend; i++)
-// 			CodeAfterAutomation += @$"
-// inputValue = {random.Next(0, 128)}; #20; store = 1; #20; store = 0; #50;";
 	}
 
 	private int RandomNormalDistribution(double mean, double standardDeviation, int minCutoff, int maxCutoff)

@@ -13,3 +13,10 @@ This repo provides the code that follows the Histogram example for Arctic Fox. T
 This folder contains the Automations and Verilog folders of an Arctic Fox project.
 
 *NOTE: Since Arctic Fox is in alpha, for security, only the Automations and Verilog folders are provided. You will need to have received access to the Arctic Fox alpha, create an Arctic Fox project, and copy the stated folders into your project.*
+
+## Version 0.2.0 Update
+With the 0.2.0 update, you can now easily import and export projects. Navigate to the root of the git repo and run the following command: 
+
+> arcticfox -import
+
+This will create the Arctic Fox project, add it to your list of projects, and open the project.
